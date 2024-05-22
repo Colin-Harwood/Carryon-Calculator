@@ -8,7 +8,6 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add any additional actions here (e.g., validation, API call)
     console.log('Length:', length);
     console.log('Width:', width);
     console.log('Height:', height);
@@ -21,8 +20,8 @@ const Home = () => {
           Carryon Calculator
         </div>
         <div className="flex grow items-center justify-center text-center">
-          <div className="h-auto bg-blue-200 w-1/2 p-10 rounded-xl border-blue-100 border-8">
-            <h2 className="text-5xl mb-8">Enter your bag details:</h2>
+          <div className="h-auto bg-blue-200 w-1/2 p-10 rounded-xl border-blue-100 border-8 mb-8">
+            <h2 className="text-5xl mb-8 text-blue-500">Enter your bag details:</h2>
             
             <form className="flex flex-col w-full items-center" onSubmit={handleSubmit}>
               <div className="mb-4 flex justify-center items-center">
